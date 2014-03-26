@@ -1,6 +1,6 @@
 Blazor
 ======
-A Voci V-Blaze Natural Language Processor
+A [Voci V-Blaze][1] Natural Language Processor
 
 Prerequisites
 -------------
@@ -23,7 +23,7 @@ This is where the transcript generated from the Voci V-Blaze is loaded, tokenize
 
 Part of Speech Tagging
 ----------------------
-In this step, each word in each sentence is assigned its respective [Treebank POS][1] tag in preparation for chunck extraction. 
+In this step, each word in each sentence is assigned its respective [Treebank POS][2] tag in preparation for chunck extraction. 
 
 Chunk Extraction
 ----------------
@@ -34,4 +34,5 @@ Sentiment Analysis
 A Sentiment Analyzer is trained on movie reviews and then utilized to classify (using NaiveBayesClassifier) each utterance sentence to one of `pos` or `neg` classes. Positive and Negative fractions are then stored for later indexing.
 
 
-  [1]: https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html/%22Treebank%20POS%22
+  [1]: http://www.vocitec.com/solutions/compare.php#blaze
+  [2]: https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html/%22Treebank%20POS%22
