@@ -2,8 +2,7 @@ import re
 from nltk import tokenize
 
 
-############################# PREPROCESSING & SENT TOKENIZATION ###############################
-###############################################################################################
+# Preprocessing & Sentence Tokenization
 def Enum(*sequential, **named):
   enums = dict(zip(sequential, range(len(sequential))), **named)
   return type('Enum', (), enums)
@@ -76,9 +75,3 @@ def parse_transcript(transcript):
     utterance = Utterance(utterance_json)
     utterances.append(utterance)
   return utterances
-
-
-# regex = re.compile(".* \+\+\D+\+\+ \+\+R?BRTH\+\+ .*")
-# for sentence in all_sentences:
-#   if regex.match(sentence):
-#     print "\n\n\n"

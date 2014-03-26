@@ -1,13 +1,8 @@
 import nltk.tag
-import itertools
 from nltk.tag import brill
 from nltk.corpus import brown
  
-brown_reviews = brown.tagged_sents(categories=['reviews'])
-brown_reviews_cutoff = len(brown_reviews) * 2 / 3
- 
-brown_train = list(itertools.chain(brown_reviews[:brown_reviews_cutoff]))
-brown_test = list(itertools.chain(brown_reviews[brown_reviews_cutoff:]))
+brown_train = brown.tagged_sents(categories=['reviews'])
 
 def backoff_tagger(tagged_sents, tagger_classes, backoff=None):
   if not backoff:

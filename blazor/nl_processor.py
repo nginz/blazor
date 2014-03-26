@@ -1,11 +1,7 @@
 import nltk
 import simplejson
 import preprocess
-import pymongo
-import pdb
-from pymongo import MongoClient
 from postag import pos_tagger
-from postag import brown_test
 from chunk_extract import chunker
 from sentiment_analyze import sentiment_class
 
