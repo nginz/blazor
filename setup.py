@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='Blazor',
-    version='0.1.1',
+    version='0.1.2',
     author='Moustafa Badawy',
     author_email='moustafa.badawym@gmail.com',
     packages=['blazor'],
