@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='Blazor',
-    version='0.1.2',
+    version='2.0.1',
     author='Moustafa Badawy',
     author_email='moustafa.badawym@gmail.com',
     packages=['blazor'],
@@ -11,8 +11,6 @@ setup(
     description='Voci V-Blaze Natural Language Processor.',
     long_description=open('README.md').read(),
     install_requires=[
-        "pyyaml",
-        "nltk",
-        "simplejson"
+        "nltk"
     ],
 )

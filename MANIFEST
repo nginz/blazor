@@ -2,8 +2,6 @@
 README.md
 setup.py
 blazor/__init__.py
-blazor/chunk_extract.py
 blazor/nl_processor.py
-blazor/postag.py
 blazor/preprocess.py
 blazor/sentiment_analyze.py
